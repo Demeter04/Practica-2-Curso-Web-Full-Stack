@@ -4,8 +4,12 @@
 
 <!-- Lorem1 son el numero de palabras a escribir ej: Lorem100-->
 
-<!DOCTYPE html>
+<!-- Copiado y pegado rápido: Alt + Shift + Flecha (Arriba o Abajo, dependiendo del lugar que se busca copiar y pegar ) -->
 
+<!-- Seleccionar una linea de codigo completa: Clt + L -->
+
+<!-- Para colocar un cursor simultaneo y escribir: Alt + Click en la linea donde se busca estar -->
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -274,9 +278,12 @@
 
     <h1>Formularios</h1>
 
+    <!-- Esta etiqueta sirve para crear un formulario -->
     <form action="">
+        <!-- Esta etiqueta sirve para crear un comentario o minititulo hacia un input de la persona -->
         <label>
             username
+            <!-- Esta etiqueta crea un input para el usuario de diferentes caracteristicas como text -->
             <input type="text" name="username" placeholder="username" required>
         </label>
 
@@ -298,8 +305,13 @@
         <br>
 
         <label for="">
+
             Ciudad:
+
+            <!-- Esta etiqueta sirve para crear una menu despegable para seleccionar una opcion-->
             <select name="ciudad">
+
+                <!-- Esta etiqueta solo sirve y funciona aqui para dar al usuario la opción -->
                 <option value="" disabled>ciudad</option>
                 <option value="1">Bogota</option>
                 <option value="2">Cali</option>
@@ -308,8 +320,75 @@
             </select>
         </label>
         <br>
+
+        <!-- Esta  etiqueta se usa para crear un cuadro donde el usuario puede agregar texto libremente -->
         <textarea name="" id="" cols="30" rows="10"></textarea>
      </form>
+
+     <br><br><br><br><br><br><br><br>
+
+    <h1>CREACION DE TABLAS</h1>
+
+    <!-- Como función principal y objetivo es bucar y crear una lista de datos o una tabla -->
+
+    <!-- Esta etiqueta sirve para crear la estructura y indicar que eso sera una tabla -->
+    <!-- Border da el borde a la tabla, pero es recomendado mejor de CSS -->
+    <table border="1px">
+        <!-- Agregar titulo a una tabla -->
+        <caption> Usuarios de la página web </caption>
+        
+        <!-- Esta etiqueta sirve para indicar la cabeza de la columna -->
+        <thead>
+            <!-- Esta etiqueta se usa para indicar la columna -->
+            <tr>
+                <!-- Esta etiqueta mencionar el titulo de cada celda de la fila del encabezado -->
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Edad
+                </th>
+                <th>
+                    Email
+                </th>
+            </tr>
+
+        </thead>
+        <!-- Etiqueta es el contenido o Datos de muestra de la tabla -->
+        <tbody>
+            <tr>
+                <!-- Esta etiqueta sera la celda de datos de cada fila-->
+                <td> 
+                    Oscar
+                </td>
+                <td>
+                    18
+                </td>
+                <td>
+                    osureg@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Juan
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    Juan_g@gmail.com
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    Total de usuarios : 2
+                </td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 
